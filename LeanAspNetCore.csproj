@@ -20,7 +20,7 @@
     <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
     <Exec WorkingDirectory="$(ClientAppFolder)" Command="npm install" />
   </Target>
-  
+
   <Target Name="BuildClientAssets" AfterTargets="ComputeFilesToPublish">
     <Exec WorkingDirectory="$(ClientAppFolder)" Command="npm install" />
     <Exec WorkingDirectory="$(ClientAppFolder)" Command="npm run prod" />
@@ -35,5 +35,11 @@
     </ItemGroup>
 
   </Target>
+
+  <ItemGroup>
+    <None Update="app.yaml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,4 @@
+/bin
+/obj
+/wwwroot/dist
+/ClientApp/node_modules
