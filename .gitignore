@@ -2,3 +2,4 @@
 /App1/obj
 /App1/wwwroot/dist
 /App1/ClientApp/node_modules
+/App1/package-lock.json
