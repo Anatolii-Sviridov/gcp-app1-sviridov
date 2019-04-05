@@ -9,7 +9,7 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: [ 'app', 'deploy', '/workspace/App1/bin/Release/netcoreapp2.1/publish/', '--stop-previous-version' ]
   env: [ 'DOTNETPATH=App1' ]
-  timeout: 20m
+  timeout: 1800s
 
 artifacts:
   objects:
