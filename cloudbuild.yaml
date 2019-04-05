@@ -7,7 +7,7 @@ steps:
   env: [ 'DOTNETPATH=App1' ]
 
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: [ 'app', 'deploy', '/workspace/App1/bin/Release/netcoreapp2.1/publish/', '--stop-previous-version', '-v=20' ]
+  args: [ 'app', 'deploy', '/workspace/App1/bin/Release/netcoreapp2.1/publish/', '--stop-previous-version' ]
   env: [ 'DOTNETPATH=App1' ]
 
 artifacts:
