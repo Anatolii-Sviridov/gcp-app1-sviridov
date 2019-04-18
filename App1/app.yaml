@@ -1,4 +1,4 @@
-service: app1
+service: default
 runtime: aspnetcore
 env: flex
 
