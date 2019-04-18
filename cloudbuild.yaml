@@ -1,7 +1,7 @@
 # Build artifactory for the App1 and deploy to GCP APP Engine.
 
 steps:
-- name: 'gcr.io/stg-sviridov/app_builder'
+- name: 'gcr.io/dev-asviridov/app_builder'
   args: [ 'dotnet', 'publish', '-c', 'Release' ]
   dir: 'App1'
   env: [ 'DOTNETPATH=App1' ]
@@ -12,7 +12,7 @@ steps:
 
 artifacts:
   objects:
-    location: 'gs://stg-sviridov/App1'
+    location: 'gs://dev-asviridov/App1'
     paths: [ '/workspace/App1/bin/Release/netcoreapp2.1/publish/*' ]
 
 timeout: 1800s
